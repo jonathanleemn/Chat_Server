@@ -1,0 +1,88 @@
+==53580== Memcheck, a memory error detector
+==53580== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==53580== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==53580== Command: ../bl_server test-16-serv
+==53580== 
+server_start()
+server_start(): end
+server_process_join()
+server_process_add_client(): Bruce 53589.client.fifo 53589.server.fifo 
+server_broadcast(): 20 from Bruce -
+server_process_join()
+server_process_add_client(): Clark 53602.client.fifo 53602.server.fifo 
+server_broadcast(): 20 from Clark -
+server: mesg received from client 1 Clark : Superman!
+server_broadcast(): 10 from Clark -
+server: mesg received from client 0 Bruce : Batman!
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 1 Clark : Superman v Batman
+server_broadcast(): 10 from Clark -
+server: mesg received from client 0 Bruce : No: Batman v Superman
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 1 Clark : It would set up Super Friends
+server_broadcast(): 10 from Clark -
+server_process_join()
+server_process_add_client(): Lois 53668.client.fifo 53668.server.fifo 
+server_broadcast(): 20 from Lois -
+server: mesg received from client 2 Lois : Gentlemen
+server_broadcast(): 10 from Lois -
+server: mesg received from client 1 Clark : Lois, what's up
+server_broadcast(): 10 from Clark -
+server: mesg received from client 0 Bruce : I am the night!
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 2 Lois : Can anyone control him
+server_broadcast(): 10 from Lois -
+server_process_join()
+server_process_add_client(): Barbara 53802.client.fifo 53802.server.fifo 
+server_broadcast(): 20 from Barbara -
+server: mesg received from client 3 Barbara : nope
+server_broadcast(): 10 from Barbara -
+server: mesg received from client 1 Clark : not me, keeps throwing green rocks at me
+server_broadcast(): 10 from Clark -
+server: mesg received from client 0 Bruce : because...
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 3 Barbara : no no no...
+server_broadcast(): 10 from Barbara -
+server: mesg received from client 0 Bruce : I'M BATMAN
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 1 Clark : nice
+server_broadcast(): 10 from Clark -
+server: mesg received from client 2 Lois : nope, nope, neeey-ooope
+server_broadcast(): 10 from Lois -
+server_remove_client(): 2
+server: mesg received from client 2 Barbara : Keep antagonizing me and watch what happens
+server_broadcast(): 10 from Barbara -
+server: mesg received from client 1 Clark : You end up in a wheel chair?
+server_broadcast(): 10 from Clark -
+server: mesg received from client 2 Barbara : >:-(
+server_broadcast(): 10 from Barbara -
+server: mesg received from client 0 Bruce : Whoa, that's insensitive
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 1 Clark : Ummm, sorry?
+server_broadcast(): 10 from Clark -
+server_remove_client(): 1
+server: mesg received from client 1 Barbara : And I thought you were rude
+server_broadcast(): 10 from Barbara -
+server: mesg received from client 0 Bruce : I am rude
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 0 Bruce : I'm whatever this city needs me to be
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 1 Barbara : cripes
+server_broadcast(): 10 from Barbara -
+server: mesg received from client 0 Bruce : Because I'm BATMAN
+server_broadcast(): 10 from Bruce -
+server_remove_client(): 0
+server: mesg received from client 0 Barbara : I've got to find a different server
+server_broadcast(): 10 from Barbara -
+server_remove_client(): 0
+select() failed
+: Interrupted system call
+==53580== 
+==53580== HEAP SUMMARY:
+==53580==     in use at exit: 0 bytes in 0 blocks
+==53580==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==53580== 
+==53580== All heap blocks were freed -- no leaks are possible
+==53580== 
+==53580== For counts of detected and suppressed errors, rerun with: -v
+==53580== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

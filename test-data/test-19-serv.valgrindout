@@ -1,0 +1,33 @@
+==54339== Memcheck, a memory error detector
+==54339== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==54339== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==54339== Command: ../bl_server test-19-serv
+==54339== 
+server_start()
+server_start(): end
+server_process_join()
+server_process_add_client(): Clark 54350.client.fifo 54350.server.fifo 
+server_broadcast(): 20 from Clark -
+server_process_join()
+server_process_add_client(): Bruce 54365.client.fifo 54365.server.fifo 
+server_broadcast(): 20 from Bruce -
+server: mesg received from client 1 Bruce : Batman!
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 0 Clark : Superman!
+server_broadcast(): 10 from Clark -
+server_process_join()
+server_process_add_client(): Lois 54390.client.fifo 54390.server.fifo 
+server_broadcast(): 20 from Lois -
+server_remove_client(): 0
+server_remove_client(): 1
+select() failed
+: Interrupted system call
+==54339== 
+==54339== HEAP SUMMARY:
+==54339==     in use at exit: 0 bytes in 0 blocks
+==54339==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==54339== 
+==54339== All heap blocks were freed -- no leaks are possible
+==54339== 
+==54339== For counts of detected and suppressed errors, rerun with: -v
+==54339== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

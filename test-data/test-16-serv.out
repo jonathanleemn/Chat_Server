@@ -1,0 +1,74 @@
+server_start()
+server_start(): end
+server_process_join()
+server_process_add_client(): Bruce 5518.client.fifo 5518.server.fifo 
+server_broadcast(): 20 from Bruce -
+server_process_join()
+server_process_add_client(): Clark 5532.client.fifo 5532.server.fifo 
+server_broadcast(): 20 from Clark -
+server: mesg received from client 1 Clark : Superman!
+server_broadcast(): 10 from Clark -
+server: mesg received from client 0 Bruce : Batman!
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 1 Clark : Superman v Batman
+server_broadcast(): 10 from Clark -
+server: mesg received from client 0 Bruce : No: Batman v Superman
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 1 Clark : It would set up Super Friends
+server_broadcast(): 10 from Clark -
+server_process_join()
+server_process_add_client(): Lois 5570.client.fifo 5570.server.fifo 
+server_broadcast(): 20 from Lois -
+server: mesg received from client 2 Lois : Gentlemen
+server_broadcast(): 10 from Lois -
+server: mesg received from client 1 Clark : Lois, what's up
+server_broadcast(): 10 from Clark -
+server: mesg received from client 0 Bruce : I am the night!
+server_broadcast(): 10 from Bruce -
+server_process_join()
+server_process_add_client(): Barbara 5602.client.fifo 5602.server.fifo 
+server_broadcast(): 20 from Barbara -
+server: mesg received from client 2 Lois : Can anyone control him
+server_broadcast(): 10 from Lois -
+server: mesg received from client 3 Barbara : nope
+server_broadcast(): 10 from Barbara -
+server: mesg received from client 1 Clark : not me, keeps throwing green rocks at me
+server_broadcast(): 10 from Clark -
+server: mesg received from client 0 Bruce : because...
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 3 Barbara : no no no...
+server_broadcast(): 10 from Barbara -
+server: mesg received from client 0 Bruce : I'M BATMAN
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 1 Clark : nice
+server_broadcast(): 10 from Clark -
+server: mesg received from client 2 Lois : nope, nope, neeey-ooope
+server_broadcast(): 10 from Lois -
+server_remove_client(): 2
+server: mesg received from client 2 Barbara : Keep antagonizing me and watch what happens
+server_broadcast(): 10 from Barbara -
+server: mesg received from client 1 Clark : You end up in a wheel chair?
+server_broadcast(): 10 from Clark -
+server: mesg received from client 2 Barbara : >:-(
+server_broadcast(): 10 from Barbara -
+server: mesg received from client 0 Bruce : Whoa, that's insensitive
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 1 Clark : Ummm, sorry?
+server_broadcast(): 10 from Clark -
+server_remove_client(): 1
+server: mesg received from client 1 Barbara : And I thought you were rude
+server_broadcast(): 10 from Barbara -
+server: mesg received from client 0 Bruce : I am rude
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 0 Bruce : I'm whatever this city needs me to be
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 1 Barbara : cripes
+server_broadcast(): 10 from Barbara -
+server: mesg received from client 0 Bruce : Because I'm BATMAN
+server_broadcast(): 10 from Bruce -
+server_remove_client(): 0
+server: mesg received from client 0 Barbara : I've got to find a different server
+server_broadcast(): 10 from Barbara -
+server_remove_client(): 0
+select() failed
+: Interrupted system call

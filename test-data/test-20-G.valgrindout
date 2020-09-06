@@ -1,0 +1,33 @@
+==54595== Memcheck, a memory error detector
+==54595== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==54595== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==54595== Command: ../bl_client test-20-serv G
+==54595== 
+-- G JOINED --
+[A] : 9
+-- H JOINED --
+[D] : 10
+[E] : 11
+[C] : 12
+[B] : 13
+-- C DEPARTED --
+[F] : 14
+[G] : 15
+[D] : 16
+[E] : 17
+[B] : 18
+-- D DEPARTED --
+[F] : 19
+[F] : 20
+[E] : 21
+[A] : 22
+G>> 
+==54595== 
+==54595== HEAP SUMMARY:
+==54595==     in use at exit: 0 bytes in 0 blocks
+==54595==   total heap usage: 8 allocs, 8 frees, 6,334 bytes allocated
+==54595== 
+==54595== All heap blocks were freed -- no leaks are possible
+==54595== 
+==54595== For counts of detected and suppressed errors, rerun with: -v
+==54595== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

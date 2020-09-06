@@ -1,0 +1,56 @@
+server_start()
+server_start(): end
+server_process_join()
+server_process_add_client(): Clark1 5281.client.fifo 5281.server.fifo 
+server_broadcast(): 20 from Clark1 -
+server: mesg received from client 0 Clark1 : Superman!
+server_broadcast(): 10 from Clark1 -
+server_process_join()
+server_process_add_client(): Bruce1 5304.client.fifo 5304.server.fifo 
+server_broadcast(): 20 from Bruce1 -
+server: mesg received from client 1 Bruce1 : Batman!
+server_broadcast(): 10 from Bruce1 -
+server: mesg received from client 0 Clark1 : Superman!
+server_broadcast(): 10 from Clark1 -
+server_remove_client(): 1
+server_process_join()
+server_process_add_client(): Lois1 5331.client.fifo 5331.server.fifo 
+server_broadcast(): 20 from Lois1 -
+server: mesg received from client 0 Clark1 : Superman!
+server_broadcast(): 10 from Clark1 -
+server: mesg received from client 1 Lois1 : Not again
+server_broadcast(): 10 from Lois1 -
+server_process_join()
+server_process_add_client(): Bruce2 5361.client.fifo 5361.server.fifo 
+server_broadcast(): 20 from Bruce2 -
+server: mesg received from client 2 Bruce2 : Vanish!
+server_broadcast(): 10 from Bruce2 -
+server_remove_client(): 2
+server: mesg received from client 0 Clark1 : He he
+server_broadcast(): 10 from Clark1 -
+server: mesg received from client 0 Clark1 : Super speed
+server_broadcast(): 10 from Clark1 -
+server_remove_client(): 0
+server: mesg received from client 0 Lois1 : Lame
+server_broadcast(): 10 from Lois1 -
+server_process_join()
+server_process_add_client(): Clark2 5410.client.fifo 5410.server.fifo 
+server_broadcast(): 20 from Clark2 -
+server: mesg received from client 1 Clark2 : Yup - super hearing
+server_broadcast(): 10 from Clark2 -
+server_remove_client(): 0
+server: mesg received from client 0 Clark2 : Fortress of solitude
+server_broadcast(): 10 from Clark2 -
+server_process_join()
+server_process_add_client(): Bruce3 5439.client.fifo 5439.server.fifo 
+server_broadcast(): 20 from Bruce3 -
+server: mesg received from client 1 Bruce3 : From the shadows!
+server_broadcast(): 10 from Bruce3 -
+server: mesg received from client 1 Bruce3 : Kryptonite!
+server_broadcast(): 10 from Bruce3 -
+server_remove_client(): 0
+server: mesg received from client 0 Bruce3 : Batman!
+server_broadcast(): 10 from Bruce3 -
+server_remove_client(): 0
+select() failed
+: Interrupted system call

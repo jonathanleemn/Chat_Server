@@ -1,0 +1,42 @@
+==52464== Memcheck, a memory error detector
+==52464== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==52464== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==52464== Command: ../bl_server test-13-serv
+==52464== 
+server_start()
+server_start(): end
+server_process_join()
+server_process_add_client(): Clark 52480.client.fifo 52480.server.fifo 
+server_broadcast(): 20 from Clark -
+server_process_join()
+server_process_add_client(): Bruce 52495.client.fifo 52495.server.fifo 
+server_broadcast(): 20 from Bruce -
+server: mesg received from client 1 Bruce : Batman!
+server_broadcast(): 10 from Bruce -
+server_process_join()
+server_process_add_client(): Lois 52520.client.fifo 52520.server.fifo 
+server_broadcast(): 20 from Lois -
+server: mesg received from client 0 Clark : Superman!
+server_broadcast(): 10 from Clark -
+server: mesg received from client 2 Lois : Reporter?
+server_broadcast(): 10 from Lois -
+server: mesg received from client 1 Bruce : Ha
+server_broadcast(): 10 from Bruce -
+server: mesg received from client 0 Clark : He he
+server_broadcast(): 10 from Clark -
+server: mesg received from client 2 Lois : bite me
+server_broadcast(): 10 from Lois -
+server_remove_client(): 2
+server_remove_client(): 0
+server_remove_client(): 0
+select() failed
+: Interrupted system call
+==52464== 
+==52464== HEAP SUMMARY:
+==52464==     in use at exit: 0 bytes in 0 blocks
+==52464==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==52464== 
+==52464== All heap blocks were freed -- no leaks are possible
+==52464== 
+==52464== For counts of detected and suppressed errors, rerun with: -v
+==52464== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

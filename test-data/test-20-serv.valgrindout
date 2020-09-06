@@ -1,0 +1,100 @@
+==54440== Memcheck, a memory error detector
+==54440== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==54440== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==54440== Command: ../bl_server test-20-serv
+==54440== 
+server_start()
+server_start(): end
+server_process_join()
+server_process_add_client(): A 54458.client.fifo 54458.server.fifo 
+server_broadcast(): 20 from A -
+server_process_join()
+server_process_add_client(): B 54473.client.fifo 54473.server.fifo 
+server_broadcast(): 20 from B -
+server_process_join()
+server_process_add_client(): C 54494.client.fifo 54494.server.fifo 
+server_broadcast(): 20 from C -
+server: mesg received from client 2 C : 1
+server_broadcast(): 10 from C -
+server: mesg received from client 1 B : 2
+server_broadcast(): 10 from B -
+server: mesg received from client 1 B : 3
+server_broadcast(): 10 from B -
+server: mesg received from client 0 A : 4
+server_broadcast(): 10 from A -
+server_process_join()
+server_process_add_client(): D 54538.client.fifo 54538.server.fifo 
+server_broadcast(): 20 from D -
+server: mesg received from client 0 A : 5
+server_broadcast(): 10 from A -
+server_process_join()
+server_process_add_client(): E 54550.client.fifo 54550.server.fifo 
+server_broadcast(): 20 from E -
+server: mesg received from client 3 D : 6
+server_broadcast(): 10 from D -
+server: mesg received from client 4 E : 7
+server_broadcast(): 10 from E -
+server: mesg received from client 2 C : 8
+server_broadcast(): 10 from C -
+server_process_join()
+server_process_add_client(): F 54583.client.fifo 54583.server.fifo 
+server_broadcast(): 20 from F -
+server_process_join()
+server_process_add_client(): G 54595.client.fifo 54595.server.fifo 
+server_broadcast(): 20 from G -
+server: mesg received from client 0 A : 9
+server_broadcast(): 10 from A -
+server_process_join()
+server_process_add_client(): H 54610.client.fifo 54610.server.fifo 
+server_broadcast(): 20 from H -
+server: mesg received from client 3 D : 10
+server_broadcast(): 10 from D -
+server: mesg received from client 4 E : 11
+server_broadcast(): 10 from E -
+server: mesg received from client 2 C : 12
+server_broadcast(): 10 from C -
+server: mesg received from client 1 B : 13
+server_broadcast(): 10 from B -
+server_remove_client(): 2
+server: mesg received from client 4 F : 14
+server_broadcast(): 10 from F -
+server: mesg received from client 5 G : 15
+server_broadcast(): 10 from G -
+server: mesg received from client 2 D : 16
+server_broadcast(): 10 from D -
+server: mesg received from client 3 E : 17
+server_broadcast(): 10 from E -
+server: mesg received from client 1 B : 18
+server_broadcast(): 10 from B -
+server_remove_client(): 2
+server: mesg received from client 3 F : 19
+server_broadcast(): 10 from F -
+server: mesg received from client 3 F : 20
+server_broadcast(): 10 from F -
+server: mesg received from client 2 E : 21
+server_broadcast(): 10 from E -
+server: mesg received from client 0 A : 22
+server_broadcast(): 10 from A -
+server_remove_client(): 4
+server: mesg received from client 1 B : 23
+server_broadcast(): 10 from B -
+server_remove_client(): 0
+server_remove_client(): 0
+server: mesg received from client 1 F : 24
+server_broadcast(): 10 from F -
+server_remove_client(): 0
+server_remove_client(): 0
+server: mesg received from client 0 H : 25
+server_broadcast(): 10 from H -
+server_remove_client(): 0
+select() failed
+: Interrupted system call
+==54440== 
+==54440== HEAP SUMMARY:
+==54440==     in use at exit: 0 bytes in 0 blocks
+==54440==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==54440== 
+==54440== All heap blocks were freed -- no leaks are possible
+==54440== 
+==54440== For counts of detected and suppressed errors, rerun with: -v
+==54440== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

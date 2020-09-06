@@ -1,0 +1,37 @@
+==53802== Memcheck, a memory error detector
+==53802== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==53802== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==53802== Command: ../bl_client test-16-serv Barbara
+==53802== 
+-- Barbara JOINED --
+[Barbara] : nope
+[Clark] : not me, keeps throwing green rocks at me
+[Bruce] : because...
+[Barbara] : no no no...
+[Bruce] : I'M BATMAN
+[Clark] : nice
+[Lois] : nope, nope, neeey-ooope
+-- Lois DEPARTED --
+[Barbara] : Keep antagonizing me and watch what happens
+[Clark] : You end up in a wheel chair?
+[Barbara] : >:-(
+[Bruce] : Whoa, that's insensitive
+[Clark] : Ummm, sorry?
+-- Clark DEPARTED --
+[Barbara] : And I thought you were rude
+[Bruce] : I am rude
+[Bruce] : I'm whatever this city needs me to be
+[Barbara] : cripes
+[Bruce] : Because I'm BATMAN
+-- Bruce DEPARTED --
+[Barbara] : I've got to find a different server
+Barbara>> 
+==53802== 
+==53802== HEAP SUMMARY:
+==53802==     in use at exit: 0 bytes in 0 blocks
+==53802==   total heap usage: 8 allocs, 8 frees, 6,334 bytes allocated
+==53802== 
+==53802== All heap blocks were freed -- no leaks are possible
+==53802== 
+==53802== For counts of detected and suppressed errors, rerun with: -v
+==53802== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
