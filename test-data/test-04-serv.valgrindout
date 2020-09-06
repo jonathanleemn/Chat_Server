@@ -1,0 +1,26 @@
+==6137== Memcheck, a memory error detector
+==6137== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6137== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==6137== Command: ../bl_server test-04-serv
+==6137== 
+server_start()
+server_start(): end
+server_process_join()
+server_process_add_client(): Bruce 6144.client.fifo 6144.server.fifo 
+server_broadcast(): 20 from Bruce -
+server_process_join()
+server_process_add_client(): Clark 6157.client.fifo 6157.server.fifo 
+server_broadcast(): 20 from Clark -
+server_remove_client(): 0
+server_remove_client(): 0
+select() failed
+: Interrupted system call
+==6137== 
+==6137== HEAP SUMMARY:
+==6137==     in use at exit: 0 bytes in 0 blocks
+==6137==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==6137== 
+==6137== All heap blocks were freed -- no leaks are possible
+==6137== 
+==6137== For counts of detected and suppressed errors, rerun with: -v
+==6137== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

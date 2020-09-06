@@ -1,0 +1,4 @@
+server_start()
+server_start(): end
+select() failed
+: Interrupted system call
